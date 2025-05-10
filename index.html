@@ -1,124 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grids</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;500italic&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="grid-layout">
-        <div class="left-column">
-          <div class="card bg-yellow-light create-card">
-            <div class="text-40 text-black">
-              Create and schedule content
-              <span class="text-purple">quicker.</span>
-            </div>
-            <img
-              src="assets/illustration-create-post.webp"
-              alt="Create Post"
-              class="create-image"
-            />
-          </div>
-
-          <div class="card bg-yellow ai-card">
-            <div class="text-40 text-black">Write your content using AI.</div>
-            <img
-              src="assets/illustration-ai-content.webp"
-              alt="AI Content"
-              class="ai-image"
-            />
-          </div>
-        </div>
-
-        <!-- Main Card -->
-        <div class="card bg-purple main-card">
-          <div class="text-62 text-white">
-            Social Media <span class="text-yellow">10x</span> <i>Faster</i> with AI
-          </div>
-          <div class="stars-container">
-            <img
-              src="assets/illustration-five-stars.webp"
-              alt="5 star rating"
-              width="192"
-              height="32"
-            />
-          </div>
-          <div class="text-18 text-white">Over 4,000 5-star reviews</div>
-        </div>
-
-        <!-- Right Column -->
-        <div class="card bg-purple-light right-column">
-          <div class="text-36 text-black">Schedule to social media.</div>
-          <div class="calendar-image-container">
-            <img
-              src="assets/illustration-schedule-posts.webp"
-              alt="Best posting times visualization"
-              class="calendar-image"
-            />
-          </div>
-          <div class="text-20 text-black calendar-description">
-            Optimize post timings to publish content at the perfect time for
-            your audience.
-          </div>
-        </div>
-
-        <!-- Middle Row -->
-        <div class="middle-row">
-          <div class="card bg-white platform-card">
-            <img
-              src="assets/illustration-multiple-platforms.webp"
-              alt="Social Platforms"
-              class="platform-image"
-            />
-            <div class="text-32 text-black mt-16">
-              Manage multiple accounts and platforms.
-            </div>
-          </div>
-
-          <div class="card bg-yellow schedule-card">
-            <div class="text-32 text-black">
-              Maintain a consistent posting schedule.
-            </div>
-            <img
-              src="assets/illustration-consistent-schedule.webp"
-              alt="Calendar"
-              class="schedule-image"
-            />
-          </div>
-        </div>
-
-        <!-- Bottom Row -->
-        <div class="bottom-row">
-          <div class="card bg-white stats-card">
-            <div>
-              <div class="text-62 text-black">&gt;56%</div>
-              <div class="text-18">faster audience growth</div>
-            </div>
-            <img
-              src="assets/illustration-audience-growth.webp"
-              alt="Audience Growth"
-              class="audience-image"
-            />
-          </div>
-
-          <div class="card bg-purple growth-card">
-            <img
-              src="assets/illustration-grow-followers.webp"
-              alt="Follower Growth"
-              class="growth-image"
-            />
-            <div class="text-36 text-white">
-              Grow followers with non-stop content.
-            </div>
-          </div>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Bento grid</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="layout-grid">
+    <div class="card card--highlight">
+      <h1>
+        Social Media <span class="text-decoration">10x</span> Faster with AI
+      </h1>
+      <img src="assets/illustration-five-stars.webp" alt="" />
+      <p><small>Over 4,000 5-star reviews</small></p>
     </div>
-  </body>
+
+    <div class="card card--platforms">
+      <h2 class="card--title">Manage multiple accounts and platforms.</h2>
+      <img src="/assets/illustration-multiple-platforms.webp" alt="" />
+    </div>
+
+    <div class="card card--schedule">
+      <img class="card-image" src="/assets/illustration-consistent-schedule.webp" alt="" />
+      <h2 class="card--title">Maintain a consistent posting schedule.</h2>
+    </div>
+
+    <div class="card card--timing">
+      <h2 class="card--title">Schedule to social media.</h2>
+      <img src="assets/illustration-schedule-posts.webp" alt="" />
+      <p>Optimize post timings to publish content at the perfect time for your audience.</p>
+    </div>
+
+    <div class="card card--followers">
+      <h2 class="card--title">Grow followers with non-stop content.</h2>
+      <img src="assets/illustration-grow-followers.webp" alt="" />
+    </div>
+
+    <div class="card card--growth">
+      <h2><span>>56%</span> faster audience growth.</h2>
+      <img src="assets/illustration-audience-growth.webp" alt="" />
+    </div>
+
+    <div class="card card--quick-create">
+      <h2 class="card--title">Create and schedule content <span>quicker.</span></h2>
+      <img src="assets/illustration-create-post.webp" alt="" />
+    </div>
+
+    <div class="card card--ai-content">
+      <h2 class="card--title">Write your content using AI.</h2>
+      <img src="assets/illustration-ai-content.webp" alt="" />
+    </div>
+  </main>
+</body>
 </html>
